@@ -1,0 +1,508 @@
+
+/* main start */
+main.main-index{
+    width: 100%;
+    height: 100vh;
+    background-color: #4e5572;
+    position: relative;
+    overflow: hidden;
+}
+.banner-text{
+    width: 100%;
+    position: absolute;
+    top: 25px;
+    background: linear-gradient(to left, transparent 33%, #000 33%35%, #232020);
+}
+.banner-text h2{
+    width: 600px;
+    margin: 25px 25px 0 auto;
+    color: #eee;
+    background: linear-gradient(90deg, transparent 20%, #662e68 20% 60%, transparent 60%);
+    padding: 15px;
+    font-size: 32px;
+    font-family: "hei";
+}
+.banner-info{
+    width: 80%;
+    margin: 0 auto;
+    font-family: "hei";
+    padding-bottom: 40px;
+}
+.banner-info p{ 
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #eee;
+    padding: 15px 0;
+}
+.banner-info a{
+    text-align: right;
+}
+.enhance-a {
+    display: block;
+    width: 100px;
+    text-decoration: underline 1px solid #ff5c77;
+    text-underline-offset: 5px;
+    color: #ff5c77;
+    font-size: 20px;
+    margin: 10px auto;
+    text-align: center;
+}
+.banner-info .enhance-a{
+    margin-left: 0;
+}
+.banner-main{
+    width: 90%;
+    height: 60vh;
+    margin: 0 0 auto auto;
+    position: relative;
+}
+.banner-main h1{
+    font-size: 70px;
+    line-height: 1.2;
+    color: #eee;
+    text-shadow: -2px 2px 5px #c0c0c0;
+    position: absolute;
+    top: -62px;
+    left: 20px;
+    font-family: "hei";
+}
+.banner-main  p{
+    font-family: "beyno";
+    color: #eee;
+    writing-mode: vertical-rl;
+    text-shadow: 2px 0 5px #c0c0c0;
+    width: 300px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+#bannerV{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+/* main end */
+
+
+
+/* fillin start */
+.fillin{
+    width: 100%;
+    background-image: linear-gradient(to bottom, #4e5572, #111);
+}
+.fillinB{
+    background-image: linear-gradient(to top, #4e5572, #111);
+}
+.fillin-pic{
+    width: 70%;
+    margin: 0 auto 0 0;
+    padding: 50px 0;
+}
+.fillinB .fillin-pic{
+    margin: 0 0 0 auto;
+}
+.fillin-imgA, .fillin-imgB{
+    width: 100%;
+    height: 300px;
+    background-image: url(img/fillinA.png);
+    background-attachment: fixed;
+}
+.fillin-imgB{
+    background-image: url(img/fillinB.png);
+}
+.fillin p{
+    width: 70%;
+    padding: 100px 20px 100px 0;
+    margin: 0 0 0 auto;
+    color: #eee;
+    text-align: right;
+    font-size: 70px;
+    font-family: "beyno";
+    background-image: linear-gradient(180deg, transparent 35%, #662e68 35% 65%, transparent 65%);
+}
+.fillinB p{
+    text-align: left;
+    padding: 100px 0 100px 20px;
+    margin: 0 auto 0 0;
+}
+/* fillin end */
+
+/* section start */
+.silence{
+    width: 90%;
+    margin: 0 auto;
+}
+.product {
+    width: 100%;
+    position: relative;
+    background-color: #111;
+    overflow: clip;
+}
+.product h2 {
+    width: 20%;
+    height: 100%;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    font-size: 32px;
+    font-family: "hei";
+    text-align: center;
+    color: #eee;
+    text-shadow: -2px 2px 3px #c0c0c088;
+    position: sticky;
+    top: 200px;
+    z-index: 1;
+}
+.shop h2{
+    box-sizing: content-box;
+    margin: 0 0 0 auto;
+    width: 35px;
+    padding-top: 200px;
+    padding-right: 35px;
+    padding-bottom: 280px;
+    font-size: 32px;
+    font-family: "hei";
+    text-align: center;
+    color: #eee;
+    text-shadow: -2px 2px 3px #c0c0c0;
+    position: relative;
+    z-index: 1;
+}
+.silence h2:before, .instrument h2:before, .shop h2:before {
+    font-size: 150px;
+    color: #662e68;
+    text-shadow: none;
+    position: absolute;
+    top: -90px;
+    z-index: -1;
+}
+.silence h2:before {
+    content: "寂";
+    left: -25px;
+}
+.instrument h2:before {
+    content: "輯";
+    right: -25px;
+}
+.shop h2:before {
+    content: "極";
+    top: 120px;
+    right: 25px;
+    z-index: -1;
+}
+.shop h2 span{
+    width: 20px;
+    font-size: 26px;
+    line-height: 1;
+    word-break: break-all;
+    position: absolute;
+    top: 270px;
+    right: 75px;
+}
+section h3, section p {
+    color: #eee;
+    text-shadow: 0 0 20px #232020;
+    margin: 0;
+    text-align: center;
+    font-family: "hei";
+    position: relative;
+    z-index: 1;
+}
+section h3 {
+    font-size: 26px;
+    line-height: 2;
+    padding: 250px 0 0 0;
+}
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px 0;
+}
+.silence, .instrument{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.silence{
+    justify-content: flex-end;
+}
+.instrument{
+    flex-direction: row-reverse;
+    margin-top: 200px;
+}
+.shop{
+    width: 100%;
+    position: relative;
+}
+.vst, .gdneighbor, .realIns{
+    width: 80%;
+    position: relative;
+    z-index: 2;
+}
+.vst, .realIns{
+    margin: 200px 0;
+}
+.realIns{
+    margin-bottom: 80px;
+}
+.silence img, .realIns img{
+    position: absolute;
+}
+.vst img:nth-child(1){
+    width: 66.666666%;
+    top: 0;
+    left: 0;
+}
+.vst img:nth-child(2){
+    width: 58.333333%;
+    top: 20%;
+    right: 0;
+    z-index: 2;
+}
+.gdneighbor img:nth-child(1){
+    width: 66.666666%;
+    top: 0;
+    right: 0;
+}
+.gdneighbor img:nth-child(2){
+    width: 66.666666%;
+    top: 20%;
+    left: 0;
+}
+.realIns img:nth-child(1){
+    width: 66.666666%;
+    top: 0;
+    right: 0;
+}
+.realIns img:nth-child(2){
+    width: 66.666666%;
+    top: 25%;
+    left: 0;
+}
+.shop-bg{
+    width: 100%;
+    background-color: #4e5572;
+}
+.shop{
+    max-width: 1200px;
+    width: 100%;
+    background-image: linear-gradient(90deg, transparent 20%, #662e68 20% 70%, transparent 70%);
+    background-position: 0% 20%;
+    background-size: 100% 70%;
+    background-repeat: no-repeat;
+}
+.shop .shop-img{
+    width: 100%;
+    position: relative;
+}
+.shop-img img{
+    position: absolute;
+    width: 50%;
+}
+.shop-img img:nth-child(1){
+    top: 230px;
+    left: 20%;
+}
+.shop-img img:nth-child(2){
+    top: 350px;
+    left: 5%;
+}
+.shop-img img:nth-child(3){
+    top: 410px;
+    left: 20%;
+}
+.shop-text{
+    width: 100%;
+    background-image: linear-gradient(90deg, transparent 35%, #232020 35% 85%, #111);
+    background-position: 0% 40%;
+    background-size: 100% 70%;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+}
+.shop-text ul{
+    width: 100%;
+    padding: 0 35px  0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #eee;
+    font-family: "hei";
+}
+.shop-text ul li{
+    width: 130px;
+    margin-left: auto;
+    margin-right: 0;
+    list-style: disc;
+}
+.shop-text .enhance-a{
+    margin-right: 35px;
+}
+.vst img, .gdneighbor img, .realIns img, .shop img{
+    max-width: 400px;
+}
+/* section end */
+
+
+
+/* animation start */
+.drAni{
+    width: 60%;
+    position: absolute;
+    top: 500px;
+    left: 0px;
+    opacity: .7;
+}
+.drani{
+    width: 100%;
+    position: sticky;
+    top: 200px;
+    animation: mov 3s ease-in-out infinite;
+}
+@keyframes mov {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.ringAni{
+    width: 60%;
+    position: absolute;
+    bottom: 600px;
+    right: 0;
+    opacity: .7;
+}
+.ringAni img{
+    width: 100%;
+    vertical-align: top;
+    transform: perspective(800px) rotateY(-30deg) rotateX(45deg)
+}
+.ringAni img:nth-child(1){
+    position: absolute;
+    top: -30px;
+    left: -8px;
+}
+.ringAni img:nth-child(2){
+    position: absolute;
+    top: -10px;
+    left: -3px;
+    animation: rotate 5s linear infinite;
+}
+.ringAni img:nth-child(3){
+    position: absolute;
+    top: -20px;
+    left: -6px;
+    animation: rotate 60s linear infinite;
+}
+.ringAni img:nth-child(4){
+    position: absolute;
+    top: -15px;
+    left: -4px;
+    animation: rotate 20s linear infinite;
+}
+.ringAni img:nth-child(5){
+    position: absolute;
+    top: -40px;
+    left: -14px;
+    animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: perspective(800px) rotateY(-30deg) rotateX(45deg) rotateZ(0deg);
+    }
+    100%{
+        transform: perspective(800px) rotateY(-30deg) rotateX(45deg) rotateZ(360deg);
+    }
+}
+/* animation end */
+
+@media screen and (min-width: 768px) {
+    .banner-text{
+        top: 5%;
+    }
+    .banner-main h1{
+        font-size: 100px;
+        top: -60px;
+        left: 100px;
+    }
+    .banner-main p{
+        writing-mode: initial;
+        font-size: 100px;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+    }
+    .product h2{
+        width: 40%;
+    }
+    .vst, .gdneighbor, .realIns{
+        width: 60%;
+    }
+    .drAni{
+        top: 150px;
+    }
+    .ringAni{
+        bottom: 0;
+    }
+    .shop-text{
+        width: 75%;
+        margin: 0 auto;
+    }
+    .shop-img img{
+        width: 45%;
+    }
+    .shop-img img:nth-child(1){
+        top: 100px;
+        left: 20%;
+    }
+    .shop-img img:nth-child(2){
+        top: 270px;
+        left: 5%;
+    }
+    .shop-img img:nth-child(3){
+        top: 300px;
+        left: 20%;
+    }
+    section h3{
+        padding-top: 300px;
+    }
+    .drAni{
+        width: 40%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    
+    section h3{
+        padding-top: 350px;
+    }
+    .shop-img img{
+        width: 40%;
+    }
+    .shop-img img:nth-child(1){
+
+        left: 30%;
+    }
+    .shop-img img:nth-child(2){
+
+        left: 15%;
+    }
+    .shop-img img:nth-child(3){
+
+        left: 30%;
+    }
+}
+
+
+
+
+
+
+

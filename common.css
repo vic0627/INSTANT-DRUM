@@ -1,0 +1,283 @@
+@font-face {
+    font-family: "beyno";
+    src: url(fonts/BEYNO.otf);
+}
+@font-face {
+    font-family: "hei";
+    src: url(fonts/AdobeHeitiStd-Regular.otf);
+}
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+/* header start */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: #232020;
+    box-shadow: 0 2px 8px 1px #232020;
+    padding: 10px;
+}
+.logo{
+    width: 140px;
+    display: block;
+    font-size: 0;
+}
+.logo .logoPic{
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    padding-top: 2px;
+}
+.logo .logoPic img{
+    width: 100%;
+    vertical-align: top;
+}
+.logo .title{
+    width: 75%;
+    display: inline-block;
+    padding: 0 5px;
+    
+}
+.logo .title p{
+    width: 100%;
+    font-size: 12px;
+    color: #eee;
+}
+.title :nth-child(1) {
+    font-family: "beyno";
+}
+.title :nth-child(2) {
+    font-family: "hei";
+}
+#nav-switch{
+    display: none;
+}
+.searchbar{
+    display: none;
+}
+.hb{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+.hb span{
+    width: 28px;
+    height: 2px;
+    background-color: #eee;
+}
+header .hb span:nth-child(1){
+    animation: cross-top-b .3s linear;
+}
+#nav-switch:checked + header .hb span:nth-child(1){
+    animation: cross-top .3s linear forwards;
+}
+header .hb span:nth-child(2){
+    opacity: 1;
+    transition: 0s .2s;
+}
+#nav-switch:checked + header .hb span:nth-child(2){
+    opacity: 0;
+    transition: .2s;
+}
+header .hb span:nth-child(3){
+    animation: cross-bt-b .3s linear;
+}
+#nav-switch:checked + header .hb span:nth-child(3){
+    animation: cross-bt .3s linear forwards;
+}
+@keyframes cross-top {
+    0%{transform: none}
+    33%{transform: translateY(9.5px);}
+    66%{transform: translateY(9.5px) rotateZ(90deg);}
+    100%{transform: translateY(9.5px) rotateZ(45deg);}
+}
+@keyframes cross-top-b {
+    0%{transform: translateY(9.5px) rotateZ(-45deg);}
+    50%{transform: translateY(9.5px);}
+    100%{transform: none;}
+}
+@keyframes cross-bt {
+    0%{transform: none}
+    33%{transform: translateY(-9.5px);}
+    66%{transform: translateY(-9.5px) rotateZ(-90deg);}
+    100%{transform: translateY(-9.5px) rotateZ(-45deg);}
+}
+@keyframes cross-bt-b {
+    0%{transform: translateY(-9.5px) rotateZ(45deg);}
+    50%{transform: translateY(-9.5px);}
+    100%{transform: none;}
+}
+.main-nav{
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    background-color: #232020ee;
+    box-shadow: 0 2px 8px 1px #232020;
+    opacity: 0;
+    transition: opacity .1s .3s, left .3s;
+}
+#nav-switch:checked + header .main-nav{
+    left: 0;
+    opacity: 1;
+    transition: opacity .1s, left .3s .1s;
+}
+.main-nav a{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    text-decoration: none;
+    color: #eee;
+    box-shadow: 0 2px 8px 1px #232020 inset;
+    font-family: "hei";
+    position: relative;
+    overflow: hidden;
+}
+nav a p:nth-child(1){
+    color: #662e68;
+    position: absolute;
+    top: 2px;
+    left: 10%;
+    font-size: 80px;
+}
+/* header end */
+/* footer start */
+footer{
+    width: 100%;
+    background-color: #232020;
+}
+.socialMedia{
+    width: 100%;
+    text-align: right;
+}
+.socialmedia{
+    display: inline-block;
+    width: 35px;
+    background-color: #662e68;
+    margin: 0 10px;
+    border-radius: 10%;
+}
+.socialmedia img{
+    width: 100%;
+    vertical-align: top;
+}
+.categories{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 20px 10px;
+}
+.categories h4 {
+    font-size: 20px;
+    color: #eee;
+    padding: 15px 0;
+}
+.categories a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #a2a79e;
+    line-height: 1.8;
+}
+.category{
+    width: 30%;
+    margin: 10px 20px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+}
+.declare{
+    width: 100%;
+    border-top: 1px solid #a2a79e;
+    padding: 15px;
+    text-align: center;
+    line-height:1.2;
+    color: #a2a79e;
+    font-size: 16px;
+}
+/* footer end */
+@media screen and (min-width: 1024px) {
+    header {
+        position: fixed;
+        background-color: transparent;
+        box-shadow: none;
+        background-image: linear-gradient(to bottom, #232020, transparent);
+    }
+    .hb{
+        display: none;
+    }
+    .main-nav {
+        opacity: 1;
+        position: relative;
+        top: 0;
+        left: 0;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        background-color: transparent;
+        background-image: none;
+        box-shadow: none;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .main-nav a {
+        display: block;
+        width: 120px;
+        padding: 0;
+        text-decoration: none;
+        font-size: 20px;
+        color: #eee;
+        background-image: none;
+        background-color: transparent;
+        box-shadow: none;
+        text-shadow: 0 0 20px #232020;
+        position: relative;
+    }
+    .main-nav a p:nth-child(1){
+        font-size: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+        color: #eee;
+        opacity: 1;
+        transition: .3s;
+    }
+    .main-nav a p:nth-child(2){
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: .3s;
+        font-size: 20px;
+    }
+    .main-nav a:hover p:nth-child(1), .main-nav a:hover p:nth-child(1) {
+        opacity: 0;
+    }
+    .main-nav a:hover p:nth-child(2), .main-nav a:hover p:nth-child(2) {
+        opacity: 1;
+    }
+    .searchbar {
+        display: block;
+        width: 140px;
+        height: 20px;
+        text-align: right;
+        overflow: hidden;
+    }
+    .searchbar img{
+        width: 20%;
+    }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>即擊 INSTANT DRUM</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="member.css">
+    <style>
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="nav-switch">
+    <header>
+        <a href="index.html" class="logo">
+            <div class="logoPic">
+                <img src="img/logo.svg" alt="logopic">
+            </div>
+            <div class="title">
+                <p>INSTANTDRUM</p>
+                <p>即擊</p>
+            </div>
+        </a>
+        <label for="nav-switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main-nav">
+            <a href="02.html">
+                <p>即</p>
+                <p>即時打擊預覽</p>
+            </a>
+            <a href="03.html">
+                <p>寂</p>
+                <p>虛擬好聲音</p>
+            </a>
+            <a href="03.html">
+                <p>輯</p>
+                <p>實體好聲音</p>
+            </a>
+            <a href="04.html">
+                <p>極</p>
+                <p>線上商城</p>
+            </a>
+            <a href="05.html">
+                <p>籍</p>
+                <p>會員中心</p>
+            </a>
+            <a href="#">
+                <p>集</p>
+                <p>關於我們</p>
+            </a>
+        </nav>
+        <a href="#" class="searchbar">
+            <img src="img/search.svg" alt="searchicon">
+        </a>
+    </header>
+    <!-- <div class="bannerV">
+        <video src="wave.mp4" type="video/mp4" autoplay muted loop id="bannerV">
+        </video>
+    </div> -->
+    <main class="main-member">
+        <h1><span>會員</span>中心</h1>
+        <section class="login">
+            <h2>會員登入</h2>
+            <form action="#" class="form-login">
+                <label for="account">
+                    帳號
+                    <input type="text" id="account" placeholder="請輸入帳號">
+                </label>
+                <label for="password">
+                    密碼
+                    <input type="password" id="password" placeholder="請輸入密碼">
+                </label>
+                <button type="submit">登入</button>
+            </form>
+            <a href="#">忘記密碼?</a>
+        </section>
+        <section class="signup">
+            <h2>會員註冊</h2>
+            <form action="#" class="form-signup">
+                <label for="email" class="email">
+                    E-mail
+                    <input type="email" id="email" placeholder="@gmail.com">
+                    <button type="submit" onclick="javascript:window.alert('驗證碼已送出，請留意收件箱訊息。'); document.getElementById('display-confirm').style.display = 'block'" id="none-confirm">取得驗證碼</button>
+                </label>
+                <label for="confirm" id="display-confirm">
+                    <input type="text" id="confirm" placeholder="請輸入驗證碼">
+                    <button type="submit" onclick="javascript:window.alert('驗證成功'); document.getElementById('display-confirm').style.display = 'none'; document.getElementById('none-confirm').style.display = 'none'">送出驗證碼</button>
+                </label>
+                <label for="password">
+                    密碼
+                    <input type="password" id="password" placeholder="請輸入密碼">
+                </label>
+                <label for="password">
+                    密碼確認
+                    <input type="password" id="password" placeholder="再輸入一次密碼">
+                </label>
+                <button type="submit">註冊</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="socialMedia">
+            <a href="#" class="socialmedia">
+                <img src="img/facebook.png" alt="facebookPNG">
+            </a>
+            <a href="#" class="socialmedia">
+                <img src="img/twitter.png" alt="twitterPNG">
+            </a>
+            <a href="#" class="socialmedia">
+                <img src="img/instagram-logo.png" alt="instagram-logoPNG">
+            </a>
+            <a href="#" class="socialmedia">
+                <img src="img/youtube.png" alt="youtubePNG">
+            </a>
+        </div>
+        <div class="categories">
+            <div class="category">
+                <h4>虛擬好聲音</h4>
+                <div class="item">
+                    <a href="#">最新優惠</a>
+                    <a href="#">新好聲音</a>
+                    <a href="#">VST虛擬音源</a>
+                    <a href="#">好鄰居系列</a>
+                    <a href="#">知名品牌</a>
+                </div>
+            </div>
+            <div class="category">
+                <h4>實體好聲音</h4>
+                <div class="item">
+                    <a href="#">最新優惠</a>
+                    <a href="#">新好聲音</a>
+                    <a href="#">知名品牌</a>
+                </div>
+            </div>
+            <div class="category">
+                <h4>部落格</h4>
+                <div class="item">
+                    <a href="#">所有貼文</a>
+                    <a href="#">背景音樂</a>
+                    <a href="#">RADIO PODCAST</a>
+                    <a href="#">減少碳足跡</a>
+                </div>
+            </div>
+            <div class="category">
+                <h4>更多訊息</h4>
+                <div class="item">
+                    <a href="#">聯繫我們</a>
+                    <a href="#">關於我們</a>
+                    <a href="#">合作夥伴</a>
+                    <a href="#">隱私政策</a>
+                    <a href="#">常見問題</a>
+                </div>
+            </div>
+        </div>
+        <div class="declare">
+            <p>本網站為緯育TibaMe-前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。</p>
+            <p>COPYRIGHT © 2022 INSTANT DRUM Co.,Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

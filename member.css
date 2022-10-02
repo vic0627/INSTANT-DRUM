@@ -1,0 +1,128 @@
+h1, h2, h3, h4, h5, h6, p, div, a, label{
+    font-family: "hei";
+}
+
+
+/* .signup{
+    display: none;
+} */
+
+
+.main-member{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, #aaa 20%, #eee 40% 50%, #000 50% 60%, #232020 80%);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+/* .main-member:before{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background: url(img/bgAcc.png) 0% center / 50% 100% no-repeat, linear-gradient(90deg,#000a 50%, transparent 70%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .8;
+    z-index: -1;
+} */
+/* .bannerV{
+    width: 100%;
+    height: 100vh;
+}
+#bannerV{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+} */
+.main-member h1{
+    font-size: 70px;
+    color: #eee;
+    width: 100%;
+    padding: 80px 0;
+    text-align: center;
+}
+.main-member h1 span{
+    color: #000;
+}
+.main-member h1::before{
+    content: "籍";
+    font-size: 500px;
+    color: #662e68;
+    opacity: .8;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+label{
+    display: block;
+}
+
+.login{
+    width: 50%;
+    padding: 60px;
+    text-align: center;
+    color: #eee;
+    background-color: #000a;
+    position: relative;
+    z-index: 1;
+}
+.signup{
+    width: 50%;
+    padding: 60px;
+    text-align: center;
+    color: #232020;
+    background-color: #eee6;
+    position: relative;
+    z-index: 1;
+}
+.login h2, .signup h2{
+    font-size: 20px;
+    margin: 0 150px;
+}
+.form-login >:nth-child(1), .form-login >:nth-child(2), .form-signup >:nth-child(1), .form-signup >:nth-child(3), .form-signup >:nth-child(4){
+    margin: 20px 0;
+}
+.form-login >:nth-child(1) input, .form-login >:nth-child(2) input{
+    background-color: #000a;
+    border: none;
+    margin: 0 10px;
+}
+.form-signup input, .form-signup button{
+    border: none;
+    margin: 0 10px;
+    background-color: #eee8;
+}
+.form-signup >:nth-child(1){
+    padding-left: 90px;
+}
+.form-signup >:nth-child(2){
+    padding-left: 140px;
+    display: none;
+}
+.form-signup >:nth-child(4){
+    padding-right: 30px;
+}
+.form-signup >:nth-child(5){
+    padding: 0 10px;
+    margin-left: 5px;
+}
+.form-login >:nth-child(3){
+    background-color: #000a;
+    color: #eee;
+    border: none;
+    padding: 0 10px;
+}
+.login > a{
+    width: 72px;
+    display: block;
+    margin: 20px auto 0;
+    color: #ff5c77;
+}

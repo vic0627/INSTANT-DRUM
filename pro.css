@@ -1,0 +1,130 @@
+h1, h2, h3, h4, h5, h6, p, div, a, label, li{
+    font-family: "hei";
+}
+
+
+.main-product{
+    width: 100%;
+
+    background: url(img/secBG.png);
+    background-attachment: fixed;
+    overflow: hidden;
+
+}
+#proV{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+    clip-path: polygon(33% 25%, 67% 25%, 67% 100%, 60% 100%, 60% 37%, 40% 37%, 40% 100%, 33% 100%);
+    position: absolute;
+    filter: brightness(70%);
+}
+.main-product > :nth-child(3){
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: -200px;
+    transform: translateY(-170px);
+    opacity: .8;
+}
+.product-info{
+    width: 1200px;
+    padding-top: 200px;
+    margin: 0 auto;
+    display: flex;
+    color: #eee;
+    position: relative;
+    z-index: 1;
+}
+.info-title, .proPic, .info-text{
+    width: 33.333333%;
+}
+.info-title h1{
+    font-size: 32px;
+}
+.info-title p{
+    padding-top: 80px;
+    line-height: 1.3;
+}
+.info-title > :nth-child(3){
+    display: inline-block;
+    width: 50%;
+    font-size: 32px;
+}
+.info-title > :nth-child(4){
+    display: inline-block;
+    font-size: 32px;
+    color: #ff5c77;
+    text-shadow: -2px 2px 5px #232020;
+}
+.proPic{
+    width: 500px;
+}
+.proPic img{
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    transform: translateX(15px) translateY(30px) rotate(-30deg);
+}
+.info-text{
+    padding-left: 100px;
+}
+.info-text li{
+    padding: 10px 0;
+    font-size: 16px;
+}
+.info-text li h2{
+    font-size: 20px;
+}
+
+
+.moreProduct{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.moreProduct h3{
+    font-size: 30px;
+    color: #eee;
+}
+.moreProduct ul{
+    display: flex;
+    overflow: auto;
+    margin-bottom: 40px;
+}
+.moreProduct ul::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.moreProduct ul::-webkit-scrollbar{
+    background-color: transparent;
+    height: 10px;
+}
+.moreProduct ul::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg, #662e68, #4e5572);
+}
+.list-item{
+    width: 300px;
+    padding: 10px;
+    margin: 30px;
+    background: linear-gradient(transparent 50%, #232020);
+}
+.list-item a{
+    text-decoration: none;
+}
+.itemPic{
+    width: 280px;
+}
+.itemPic img{
+    width: 100%;
+}
+.itemText{
+    margin: 0 15px;
+    color: #eee;
+}
+.itemText h4{
+    font-size: 20px;
+}
+.itemText p{
+    margin: 10px 0;
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>即擊 INSTANT DRUM</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="ins.css">
+    <style>
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="nav-switch">
+    <header>
+        <a href="index.html" class="logo">
+            <div class="logoPic">
+                <img src="img/logo.svg" alt="logopic">
+            </div>
+            <div class="title">
+                <p>INSTANTDRUM</p>
+                <p>即擊</p>
+            </div>
+        </a>
+        <label for="nav-switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main-nav">
+            <a href="02.html">
+                <p>即</p>
+                <p>即時打擊預覽</p>
+            </a>
+            <a href="03.html">
+                <p>寂</p>
+                <p>虛擬好聲音</p>
+            </a>
+            <a href="03.html">
+                <p>輯</p>
+                <p>實體好聲音</p>
+            </a>
+            <a href="04.html">
+                <p>極</p>
+                <p>線上商城</p>
+            </a>
+            <a href="05.html">
+                <p>籍</p>
+                <p>會員中心</p>
+            </a>
+            <a href="#">
+                <p>集</p>
+                <p>關於我們</p>
+            </a>
+        </nav>
+        <a href="#" class="searchbar">
+            <img src="img/search.svg" alt="searchicon">
+        </a>
+    </header>
+
+    <section class="banner-Ins">
+        <h1>
+            <span>INSTANT</span>
+            即時打擊
+            <span>預覽系統</span>
+            <span class="center">DRUM</span>
+        </h1>
+        <img src="img/mepax-snare.png" alt="">
+        <p>來自宇宙深處的好聲音，知名樂手及錄音師親自操刀，給您最全面的聲音選項，數十萬種的海量音色庫，模擬現場演奏的線上打擊系統，挑選出最合適的好聲音。</p>
+    </section>
+
+    <main class="main-Ins">
+        <section class="instruction">
+            <ol>
+                <li>
+                    <h2>操作流程</h2>
+                </li>
+                <li>
+                    <p>1</p>
+                    <p>選擇銅鈸</p>
+                    <div class="step">
+                        <img src="img/point.png" class="point" alt="point">
+                    </div>
+                </li>
+                <li>
+                    <p>2</p>
+                    <p>選擇套鼓</p>
+                    <div class="step">
+                        <img src="img/point.png" class="point" alt="point">
+                    </div>
+                </li>
+                <li>
+                    <p>3</p>
+                    <p>MIDI匯入</p>
+                    <div class="step">
+                        <img src="img/point.png" class="point" alt="point">
+                    </div>
+                </li>
+                <li>
+                    <p>4</p>
+                    <p>節拍器</p>
+                    <div class="step">
+                        <img src="img/point.png" class="point" alt="point">
+                    </div>
+                </li>
+                <li>
+                    <p>5</p>
+                    <p>開始打擊</p>
+                    <div class="step">
+                        <img src="img/point.png" class="point" alt="point">
+                    </div>
+                </li>
+                <li><p>請選擇步驟</p><img src="img/ring-white.png" alt=""></li>
+            </ol>
+        </section>
+        
+        
+        
+        <section class="drSystem">
+            <h2>即時打擊預覽系統</h2>
+            <div class="kit-control">
+                <input type="checkbox" id="cymbals-switch">
+                <div class="cymbals">
+                    <label for="cymbals-switch">
+                        <div class="cymbals-pic">
+                            <img src="img/cymbals.png" alt="">
+                        </div>
+                        <h3>銅鈸</h3>
+                    </label>
+                    <form class="cymbals-menu">
+                        <select name="hihats" id="">
+                            <optgroup label="VST Hihats">
+                                <option value="">hihatA</option>
+                                <option value="">hihatB</option>
+                                <option value="">hihatC</option>
+                                <option value="">hihatD</option>
+                                <option value="">hihatE</option>
+                                <option value="">hihatF</option>
+                            </optgroup>
+                        </select>
+                        <select name="crash" id="">
+                            <optgroup label="VST Crash">
+                                <option value="">crashA</option>
+                                <option value="">crashB</option>
+                                <option value="">crashC</option>
+                                <option value="">crashD</option>
+                                <option value="">crashE</option>
+                                <option value="">crashF</option>
+                            </optgroup>
+                        </select>
+                        <select name="ride" id="">
+                            <optgroup label="VST Crash">
+                                <option value="">rideA</option>
+                                <option value="">rideB</option>
+                                <option value="">rideC</option>
+                                <option value="">rideD</option>
+                                <option value="">rideE</option>
+                                <option value="">rideF</option>
+                            </optgroup>
+                        </select>
+                    </form>
+                </div>
+                <input type="checkbox" id="drums-switch">
+                <div class="drums">
+                    <label for="drums-switch">
+                        <div class="drums-pic">
+                            <img src="img/snare-drum.png" alt="">
+                        </div>
+                        <h3>套鼓</h3>
+                    </label>
+                    <form class="drums-menu">
+                        <select name="drums" id="">
+                            <optgroup label="VST Drums">
+                                <option value="">drumA</option>
+                                <option value="">drumB</option>
+                                <option value="">drumC</option>
+                                <option value="">drumD</option>
+                                <option value="">drumE</option>
+                                <option value="">drumF</option>
+                            </optgroup>
+                        </select>
+                    </form>
+                </div>
+                <input type="checkbox" id="midi-switch">
+                <div class="midi-upload">
+                    
+                    <label for="midi-switch">
+                        <div class="midi-pic">
+                            <img src="img/midi.png" alt="">
+                        </div>
+                        <h3>MIDI匯入</h3>
+                    </label>
+                    <form class="midi-menu">
+                        <input type="file" accept="midi/*">
+                    </form>
+                </div>
+                <div class="click">
+                    <label for="click-switch">
+                        <div class="click-pic">
+                            <img src="img/metronome.png" alt="">
+                        </div>
+                        <h3>節拍器</h3>
+                    </label>
+                </div>
+                <div class="submit">
+                    <label for="submit-switch">
+                        <div class="submit-pic">
+                            <img src="img/play-button.png" alt="">
+                        </div>
+                        <h3>START!</h3>
+                    </label>
+                </div>
+            </div>
+            <div class="drKit">
+                <div class="keys">
+                    <div data-key="65" class="key">
+                      <kbd>A</kbd>
+                      <span class="sound">tom1</span>
+                    </div>
+                    <div data-key="83" class="key">
+                      <kbd>S</kbd>
+                      <span class="sound">tom2</span>
+                    </div>
+                    <div data-key="68" class="key">
+                      <kbd>D</kbd>
+                      <span class="sound">floortom</span>
+                    </div>
+                    <div data-key="70" class="key">
+                      <kbd>F</kbd>
+                      <span class="sound">snare</span>
+                    </div>
+                    <div data-key="71" class="key">
+                      <kbd>G</kbd>
+                      <span class="sound">hihat</span>
+                    </div>
+                    <div data-key="72" class="key">
+                      <kbd>H</kbd>
+                      <span class="sound">kick</span>
+                    </div>
+                    <div data-key="74" class="key">
+                      <kbd>J</kbd>
+                      <span class="sound">crash</span>
+                    </div>
+                    <div data-key="75" class="key">
+                      <kbd>K</kbd>
+                      <span class="sound">ride</span>
+                    </div>
+                </div>
+                <audio data-key="65" src="sounds/tom1.wav"></audio>
+                <audio data-key="83" src="sounds/tom2.wav"></audio>
+                <audio data-key="68" src="sounds/floortom.wav"></audio>
+                <audio data-key="70" src="sounds/snare.wav"></audio>
+                <audio data-key="71" src="sounds/hihat.wav"></audio>
+                <audio data-key="72" src="sounds/kick.wav"></audio>
+                <audio data-key="74" src="sounds/crash.wav"></audio>
+                <audio data-key="75" src="sounds/ride.wav"></audio>
+                <script>
+                     function removeTransition(e) {
+                       if (e.propertyName !== 'transform') return;
+                       e.target.classList.remove('playing');
+                     }
+                   
+                     function playSound(e) {
+                       const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+                       const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+                       if (!audio) return;
+                   
+                       key.classList.add('playing');
+                       audio.currentTime = 0;
+                       audio.play();
+                     }
+                   
+                     const keys = Array.from(document.querySelectorAll('.key'));
+                     keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+                     window.addEventListener('keydown', playSound);
+                </script>
+            </div>
+        </section>
+    </main>
+    <!-- 
+    <section class="sound-ref">
+        <h3>音色組合參考範例</h3>
+        
+    </section> -->
+   
+    <footer>
+        <div class="socialMedia">
+            <a href="#" class="socialmedia">
+                <img src="img/facebook.png" alt="facebookPNG">
+            </a>
+            <a href="#" class="socialmedia">
+                <img src="img/twitter.png" alt="twitterPNG">
+            </a>
+            <a href="#" class="socialmedia">
+                <img src="img/instagram-logo.png" alt="instagram-logoPNG">
+            </a>
+            <a href="#" class="socialmedia">
+                <img src="img/youtube.png" alt="youtubePNG">
+            </a>
+        </div>
+        <div class="categories">
+            <div class="category">
+                <h4>虛擬好聲音</h4>
+                <div class="item">
+                    <a href="#">最新優惠</a>
+                    <a href="#">新好聲音</a>
+                    <a href="#">VST虛擬音源</a>
+                    <a href="#">好鄰居系列</a>
+                    <a href="#">知名品牌</a>
+                </div>
+            </div>
+            <div class="category">
+                <h4>實體好聲音</h4>
+                <div class="item">
+                    <a href="#">最新優惠</a>
+                    <a href="#">新好聲音</a>
+                    <a href="#">知名品牌</a>
+                </div>
+            </div>
+            <div class="category">
+                <h4>部落格</h4>
+                <div class="item">
+                    <a href="#">所有貼文</a>
+                    <a href="#">背景音樂</a>
+                    <a href="#">RADIO PODCAST</a>
+                    <a href="#">減少碳足跡</a>
+                </div>
+            </div>
+            <div class="category">
+                <h4>更多訊息</h4>
+                <div class="item">
+                    <a href="#">聯繫我們</a>
+                    <a href="#">關於我們</a>
+                    <a href="#">合作夥伴</a>
+                    <a href="#">隱私政策</a>
+                    <a href="#">常見問題</a>
+                </div>
+            </div>
+        </div>
+        <div class="declare">
+            <p>本網站為緯育TibaMe-前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。</p>
+            <p>COPYRIGHT © 2022 INSTANT DRUM Co.,Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
